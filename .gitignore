@@ -1,0 +1,9 @@
+.py[cod]
+
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+.pdm-python
+.venv/
+__pycache__/
