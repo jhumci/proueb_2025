@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 
 def load_data(file_path):
 
-    # Specify the file path
-    #file_path = 'activity.csv'
 
     # Use numpy.genfromtxt to read the CSV data from the file into a NumPy array
     data_array = np.genfromtxt(file_path, delimiter=',', dtype=None, names=True)
@@ -23,7 +21,7 @@ def load_data(file_path):
 
 
 if __name__ == "__main__":
-    data = load_data('activity.csv')
+    data = load_data('data/activity.csv')
     power_W = data['PowerOriginal']
     print(power_W)
     sorted_power_W = bubble_sort(power_W)
