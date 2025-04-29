@@ -26,4 +26,9 @@ if __name__ == "__main__":
     print(power_W)
     sorted_power_W = bubble_sort(power_W)
     print(sorted_power_W[::-1])
+    sorted_power_W.plot()
+    plt.plot(sorted_power_W)
+    plt.title('Sorted Power Data')
+    plt.xlabel('Index')
+    plt.ylabel('Power (W)')     
   
